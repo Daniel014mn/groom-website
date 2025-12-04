@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+Student Name: Daniel Mendivil
+File Name: contact.html
+Date: 12/03/2025
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact - Paws & Relax Grooming</title>
+  <meta name="description" content="Contact Paws & Relax Grooming to schedule a grooming appointment or ask questions about our services and hours.">
+  <link rel="stylesheet" href="css/styles.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=B612:wght@400;700&family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+</head>
+<body>
+  <div id="container">
+
+    <!-- header -->
+    <header>
+      <h1>Paws & Relax Grooming</h1>
+    </header>
+
+    <!-- nav -->
+    <nav id="main-nav">
+      <button id="hamburger">&#9776;</button>
+      <ul id="main-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- main area -->
+    <main>
+      <article class="contact-card">
+        <header>
+          <h2>Get in Touch</h2>
+        </header>
+
+        <div class="contact-info">
+          <h3>Contact Info</h3>
+          <p><strong>Phone:</strong> <a class="phone" href="tel:+17206807928">(720) 680-7928</a></p>
+          <p><strong>Email:</strong> info@pawsrelax.com</p>
+          <p><strong>Address:</strong> 0000 Main St, Longmont, CO 0000</p>
+        </div>
+
+        <figure class="tablet-desktop corner">
+          <img src="images/dog-banner.jpg" alt="Grooming tools and happy dogs">
+          <figcaption>Book today!</figcaption>
+        </figure>
+      </article>
+
+      <div aria-labelledby="appt-form-title" role="region">
+        <h3 id="appt-form-title" class="visually-hidden">Appointment Form</h3>
+
+        <form class="appointment-form" action="#" method="post" novalidate>
+          <fieldset>
+            <legend>Owner Information</legend>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+          </fieldset>
+
+          <fieldset>
+            <legend>Appointment Details</legend>
+
+            <label for="petName">Pet's Name</label>
+            <input type="text" id="petName" name="petName" required>
+
+            <label for="service">Select Service</label>
+            <select id="service" name="service">
+              <option value="basic">Basic Bath</option>
+              <option value="full">Full Groom</option>
+              <option value="puppy">Puppy Special</option>
+              <option value="deluxe">Deluxe Spa</option>
+              <option value="shed">De-Shedding Treatment</option>
+            </select>
+
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="notes">Notes / Special Requests</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Allergies, temperament, preferred time…"></textarea>
+          </fieldset>
+
+          <input type="submit" class="btn" value="Book Now">
+        </form>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <p><a class="phone" href="tel:+17206807928">Call: (720) 680-7928</a></p>
+      <p>&copy; 2025 Paws & Relax Grooming. All rights reserved.</p>
+
+      <a href="https://www.facebook.com" target="_blank">
+        <img src="images/facebook.png" alt="Facebook icon">
+      </a>
+      <a href="https://www.instagram.com" target="_blank">
+        <img src="images/instagram.png" alt="Instagram icon">
+      </a>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+
+  </div>
+</body>
+</html>
